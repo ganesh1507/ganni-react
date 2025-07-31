@@ -1,0 +1,69 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background: var(--background);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Left Logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+  height: 80px;   /* controls vertical space */
+  width: 80px;    /* or a fixed width if needed */
+}
+
+/* Center Nav */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 8.5rem;
+}
+.nav a {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: var(--foreground);
+  text-decoration: none;
+  position: relative;
+}
+.nav a .dot {
+  margin-left: 5px;
+  color: var(--foreground);
+}
+.nav a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--accent, orange);
+}
+
+/* Right Section */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.gear-button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: var(--foreground);
+  cursor: pointer;
+}
+.buy-button {
+  background: #fff;
+  color: #000;
+  font-weight: bold;
+  border-radius: 999px;
+  padding: 0.5rem 1.2rem;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}

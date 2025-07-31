@@ -1,0 +1,40 @@
+.coming-soon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  /* background: linear-gradient(105deg, #1d4ed8, #0ea5e9); */
+  /* color: white; */
+  text-align: center;
+  padding: 2rem;
+}
+
+.coming-card {
+  /* background: rgba(255, 255, 255, 0.05); */
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  padding: 3rem;
+  max-width: 500px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.coming-card h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.coming-card p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  /* color: #e0f2fe; */
+}
+
+.soon-badge {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  background: #0ea5e9;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
