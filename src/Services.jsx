@@ -2,7 +2,8 @@ import React from 'react'
 import { useGlobalContext } from './context'
 import styled from 'styled-components';
 import { NavLink } from "react-router-dom";
-import { Button } from "./styles/Button.jsx";
+import { Button } from "../src/Styles/Button";
+
 
 const Services = () => {
   const { services } = useGlobalContext();
