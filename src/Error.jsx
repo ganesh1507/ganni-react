@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
-import { Button } from './Styles/Button';
+import { Button } from '../src/Styles/Button';
 
 const Error = () => {
   return (
