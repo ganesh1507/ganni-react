@@ -24,11 +24,21 @@ const HeroSection = () => {
                         </Button>
                     </div>
 
-                    <div className="section-hero-image">
+                    {/* <div className="section-hero-image">
                         <picture>
                             <img src={image} alt="hero1" className='hero-img' />
                         </picture>
+                    </div> */}
+                    <div className="section-hero-image">
+                        <picture>
+                            <img
+                                src="https://www.expatrio.com/hubfs/Expatrio%20Hatch%20Child%20-%20Theme_2024Migration/Web%20Graphics/Heroes/HeroImg_EN.webp"
+                                alt="hero1"
+                                className="hero-img"
+                            />
+                        </picture>
                     </div>
+
                 </div>
             </Wrapper>
         </>
