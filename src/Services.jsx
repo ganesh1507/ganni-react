@@ -1,41 +1,41 @@
 import React from 'react'
 import { useGlobalContext } from './context'
-import  styled  from 'styled-components';
+import styled from 'styled-components';
 import { NavLink } from "react-router-dom";
-import { Button } from "./styles/Button";
+import { Button } from "./styles/Button.jsx";
 
 const Services = () => {
-  const {services}=useGlobalContext();
+  const { services } = useGlobalContext();
   console.log(services);
-  
+
   return (
     <>
-    <Wrapper classname="section">
-      <h2 className="common-heading">Our Services</h2>
-      <div className="container grid grid-three-column">
-        {services.map((curElem)=>{
-          const {id, name, image, description}=curElem;
-          return(
-            <div key={id} className="card">
-              <figure>
-                <img src={image} alt={name} />
-              </figure>
-              <div className="card-data">
-                <h3>{name}</h3>
-                <p>{description.lenght > 250 ? "":`${description.substr(0, 150)}...`}</p>
-                <NavLink to="/service">
-                  <Button className='btn'>Read More</Button>
-                </NavLink>
+      <Wrapper classname="section">
+        <h2 className="common-heading">Our Services</h2>
+        <div className="container grid grid-three-column">
+          {services.map((curElem) => {
+            const { id, name, image, description } = curElem;
+            return (
+              <div key={id} className="card">
+                <figure>
+                  <img src={image} alt={name} />
+                </figure>
+                <div className="card-data">
+                  <h3>{name}</h3>
+                  <p>{description.lenght > 250 ? "" : `${description.substr(0, 150)}...`}</p>
+                  <NavLink to="/service">
+                    <Button className='btn'>Read More</Button>
+                  </NavLink>
+                </div>
               </div>
-            </div>
-          )
-        })}
-      </div>
-    </Wrapper>
+            )
+          })}
+        </div>
+      </Wrapper>
     </>
   )
 }
-const Wrapper=styled.section`
+const Wrapper = styled.section`
   padding: 9rem 0;
   
   .container{
